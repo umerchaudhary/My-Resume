@@ -1,0 +1,112 @@
+* {
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  margin-top: 100px;
+}
+
+.introd {
+  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  width: 700px;
+  margin-left: 150px;
+}
+
+.imgnm {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.edu {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.edu1,
+.edu2,
+.edu3 {
+  border: 2px solid black;
+  margin-left: 50px;
+  width: 250px;
+}
+
+.intro button {
+  font-size: 25px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 5px;
+  height: 60px;
+  width: 200px;
+}
+
+.intro p {
+  font-size: 19px;
+  margin: 20px;
+}
+
+.intro img {
+  width: 250px;
+  border-radius: 10%;
+  border: 5px solid slategray;
+}
+
+.exp {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.expcard {
+  width: 400px;
+}
+
+.proj {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projs {
+  width: 250px;
+  text-align: center;
+}
+
+h1 {
+  color: green;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+
+#resumebtn {
+  align-self: center;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
